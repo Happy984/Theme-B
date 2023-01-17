@@ -1,0 +1,3123 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+
+    <title>Bible Studio</title><!--Title-->
+   <!-- Online Favicon -->
+    <link rel="icon" type="image/icon" sizes="56x56" href="src/icon/logo.ico"> <!-- Favicon -->
+  
+</head>
+
+<body>
+  <!-- =====Body Container=====-->
+<div data-role="page" id="studio-body-container">
+    <div data-role="header" data-position="fixed" data-fullscreen="true">
+        <h1>Bible Studio</h1>
+      <a href="#nav-panel" data-icon="bars" data-iconpos="notext"></a>
+      <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Sign in</a>
+    </div>
+<!-- =====side menu=====-->
+         <div  data-role="panel" data-position="left"data-display="reveal" data-theme="a" id="nav-panel">
+                 <ul  id="studio-nav-side-bar">
+                    <li><a class="selected" href="#ot-books" data-transition="slide">Bible</a></li>
+                    <li><a class="select2" href="#ecldictionary"data-transition="pop">Dictionary</a></li>
+                    <li><a class="select2" href="#slecldictionary"data-transition="pop">Other Dictionary</a></li>
+                    <li><a class="select3" href="#">Silozi-Greek Interlinear</a></li>
+                    <li><a class="select4" href="#">Devotions</a></li>
+                    <li><a class="select5" href="#">Sermons</a></li>
+                    <li><a class="select6" href="#">Quotes</a></li>
+                    <li><a class="select7" href="#">Tools</a></li>
+                    <li><a class="select8" href="#">Settings</a></li>
+                    <li><a class="select9" href="#">About</a></li>
+                    <li><a class="select10" href="#">Contact us</a></li>
+                    <li><a class="select12" href="#">Copyright &copy; 2018</a></li>
+                 </ul>
+          </div><!--studio-side-bar-->
+     
+  <!--Login form: this template is from Jquery-->
+        <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+            <form>
+                <div style="padding:10px 20px;">
+                    <h3>Please sign in</h3>
+                    <label for="un" class="ui-hidden-accessible">Username:</label>
+                    <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+                    <label for="pw" class="ui-hidden-accessible">Password:</label>
+                    <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+                    <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
+                </div>
+            </form>
+        </div>
+  <!--Studio-Conent-display-->
+  <form>
+     <input type="search" name="search-1" id="search-1" value="">
+</form>
+     <div class ="bible-studio-post-result">     
+              <p> Hello this is where the text is going to appear when you search for something. This is te great thing to know about as you continue to learn this language of building a site from srcatch. The font that I am using now is called Hind. I Just found out about it and it is really great on shoing a readable text. I hope you are going to enjoy it </p>
+              <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a>
+<div data-role="popup" id="popupBasic">
+<p>This is a completely basic popup, no options set.</p>
+</div>  
+  </div>
+ 
+            
+   <!---Footer--->
+        <div data-role="footer" data-position="fixed" data-fullscreen="true">
+	          <div data-role="footer">
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li><a href="#" data-icon="grid">Summary</a></li>
+            <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+            <li><a href="#" data-icon="gear">Setup</a></li>
+        </ul>
+    </div><!-- /navbar -->
+</div><!-- /footer -->
+         </div>
+  
+    </div><!--studio-container-->
+  
+  
+<!--Pages-->
+   
+    <!--=========Bible===========================================-->
+    <div data-role="page" id="ot-books">
+            <div data-role="header">
+                <h1>Bible Reference</h1>
+                <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                
+            </div>
+                <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books"data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+                <div data-role= "main" class="ui-content">
+                  <ul data-role="listview">
+                        <li><a  href="#genesis" data-transition="slide" >Genesis</a> </li>
+                        <li><a  href="#exodus" data-transition="slide">Exodus</a></li>
+                        <li><a  href="#leviticus" data-transition="slide" >Leviticus</a></li>
+                        <li><a  href="#numbers"data-transition="slide" >Numbers</a></li>
+                        <li><a  href="#deuteronomy"data-transition="slide" >Deuteronomy</a></li>
+                        <li><a  href="#joshua"data-transition="slide">Joshua</a></li>
+                        <li><a  href="#judges"data-transition="slide" >Judges</a></li>
+                        <li><a  href="#ruth"data-transition="slide">Ruth</a></li>
+                        <li><a  href="#1samuel"data-transition="slide">1 Samuel</a></li>
+                        <li><a  href="#2samue">2 Samuel</a></li>
+                        <li><a  href="#1kings">1 Kings</a></li>
+                        <li><a  href="#2kings">2 Kings</a></li>
+                        <li><a  href="#1chronicles">1 Chronicles</a></li>
+                        <li><a  href="#2chronicles">2 Chronicles</a></li>
+                        <li><a  href="#ezra">Ezra</a></li>
+                        <li><a  href="#nehemiah">Nehemiah</a></li>
+                        <li><a  href="#esther">Esther</a></li>
+                        <li><a  href="#job">Job</a></li>
+                        <li><a  href="#psalms">Psalms</a></li>
+                        <li><a  href="#proverbs">Proverbs</a></li>
+                        <li><a  href="#ecclesiastes">Ecclesiastes</a></li>
+                        <li><a  href="#songofSongs">Song of Songs</a></li>
+                        <li><a  href="#isaiah">Isaiah</a></li>
+                        <li><a  href="#jeremiah">Jeremiah</a></li>
+                        <li><a  href="#lamentations">Lamentations</a></li>
+                        <li><a  href="#ezekiel">Ezekiel</a></li>
+                        <li><a  href="#daniel">Daniel</a></li>
+                        <li><a  href="#hosea">Hosea</a></li>
+                        <li><a  href="#joel">Joel</a></li>
+                        <li><a  href="#amos">Amos</a></li>
+                        <li><a  href="#obadiah">Obadiah</a></li>
+                        <li><a  href="#jonah">Jonah</a></li>
+                        <li><a  href="#micah">Micah</a></li>
+                        <li><a  href="#nahum">Nahum</a></li>
+                        <li><a  href="#habakkuk">Habakkuk</a></li>
+                        <li><a  href="#zephaniah">Zephaniah</a></li>
+                        <li><a  href="#haggai">Haggai</a></li>
+                        <li><a  href="#zechariah">Zechariah</a></li>
+                        <li><a  href="#malachai">Malachai</a></li>
+    
+                  </ul>
+                </div>
+          </div> <!----end page-->
+    
+          <div data-role="page" id="nt-books">
+                <div data-role="header">
+                    <h1>Bible Reference</h1>
+                    <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                            <li><a href="#nt-book" data-icon="star">New Testament</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a  href="#matthew">Matthew</a></li>
+                            <li><a  href="#mark">Mark</a></li>
+                            <li><a  href="#luke">Luke</a></li>
+                            <li><a  href="#john">John</a></li>
+                            <li><a  href="#acts">Acts</a></li>
+                            <li><a  href="#romans">Romans</a></li>
+                            <li><a  href="#1corinthians">1 Corinthians</a></li>
+                            <li><a  href="#2corinthians">2 Corinthians</a></li>
+                            <li><a  href="#galatians">Galatians</a></li>
+                            <li><a  href="#ephesians">Ephesians</a></li>
+                            <li><a  href="#philippians">Philippians</a></li>
+                            <li><a  href="#colossians">Colossians</a></li>
+                            <li><a  href="#1thessalonians">1 Thessalonians</a></li>
+                            <li><a  href="#2thessalonians">2 Thessalonians</a></li>
+                            <li><a  href="#1timothy">1 Timothy</a></li>
+                            <li><a  href="#2timothy">2 timothy</a></li>
+                            <li><a  href="#titus">Titus</a></li>
+                            <li><a  href="#philemon">Philemon</a></li>
+                            <li><a  href="#hebrews">Hebrews</a></li>
+                            <li><a  href="#james">James</a></li>
+                            <li><a  href="#1peter">1 Peter</a></li>
+                            <li><a  href="#2peter">2 Peter</a></li>
+                            <li><a  href="#1john">1 John</a></li>
+                            <li><a  href="#2john">2 John</a></li>
+                            <li><a  href="#3john">3 John</a></li>
+                            <li><a  href="#jude">Jude</a></li>
+                            <li><a  href="#revelation"> Revelation</a></li>
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+    <!----The book of Genesis-->
+              <div data-role="page" id="genesis">
+                  <div data-role="header">
+                    <h1>Bible Reference</h1>
+                    <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                    <div data-role="header">
+                        <a href="#ot-books" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#exodus" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#genesis">Genesis</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+     
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                                <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                                <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                                <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                                <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                                <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                                <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                                <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                                <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                                <li><a   id="Chap41"href="#41">Chapter 41</a></li>
+                                <li><a   id="Chap42"href="#42">Chapter 42</a></li>
+                                <li><a   id="Chap43"href="#43">Chapter 43</a></li>
+                                <li><a   id="Chap44"href="#44">Chapter 44</a></li>
+                                <li><a   id="Chap45"href="#45">Chapter 45</a></li>
+                                <li><a   id="Chap46"href="#46">Chapter 46</a></li>
+                                <li><a   id="Chap47"href="#47">Chapter 47</a></li>
+                                <li><a   id="Chap48"href="#48">Chapter 48</a></li>
+                                <li><a   id="Chap49"href="#49">Chapter 49</a></li>
+                                <li><a   id="Chap50"href="#50">Chapter 50</a></li>
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                  <!----The book of Exodus-->
+              <div data-role="page" id="exodus">                  
+                <div data-role="header">
+                    <h1>Bible Reference</h1>
+                    <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#genesis" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#leviticus" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#exodus">Exodus</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                            <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                            <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                            <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                            <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                            <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                            <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                            <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                            <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                            <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                            <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                            <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                            <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                            <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                            <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                            <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                            <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                            <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                            <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                            <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                            <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                            <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                            <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                            <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                            <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                            <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+    
+                            <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                            <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                            <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                            <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                            <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                            <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                            <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                            <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                            <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                            <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                            
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+                 <!----The book of Leviticus-->
+                 <div data-role="page" id="leviticus">
+                   <div data-role="header">
+                     <h1>Bible Reference</h1>
+                         <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#exodus" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#numbers" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#leviticus">Leviticus</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                             
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                 <!----The book of Numbers-->
+                 <div data-role="page" id="numbers">
+                    <div data-role="header">
+                     <h1>Bible Reference</h1>
+                         <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                   
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#leviticus" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#deuteronomy" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#numbers">Numbers</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+        
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                                <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                                <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                                <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                                <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+    
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                   <!----The book of Deuteronomy-->
+                 <div data-role="page" id="deuteronomy">
+             <div data-role="header">
+                     <h1>Bible Reference</h1>
+                         <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#numbers" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#joshua" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#deuteronomy">Deuteronomy</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+        
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                                <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                                <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+                          
+                           <!----The book of Joshua-->
+                           <div data-role="page" id="joshua">
+                          <div data-role="header">
+                             <h1>Bible Reference</h1>
+                                 <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                              </div>
+                                <nav data-role="navbar" data-theme="a">
+                                        <ul>
+                                            <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                            <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                        </ul>
+                                    </nav>
+                            <div data-role="header">
+                                <a href="#deuteronomy" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                                <h2>Old Testament</h2>
+                                <a href="#judges" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                                     
+                            </div>
+                                <nav data-role="navbar" data-theme="a">
+                                    <ul>
+                                        <li><a href="#joshua">Joshua</a></li>
+                                    </ul>
+                                </nav>
+                                <div data-role= "main" class="ui-content">
+                                  <ul data-role="listview">
+                                        <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                        <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                        <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                        <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                        <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                        <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                        <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                        <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                        <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                        <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                        <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                        <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                        <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                        <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                        <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                        <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                        <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                        <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                        <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                        <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                        <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                        <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                        <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                        <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+      
+                                  </ul>
+                                </div>
+                          </div> <!----end page-->
+    
+    
+                    <!----The book of Judges-->
+                 <div data-role="page" id="judges">
+                    <div data-role="header">
+                     <h1>Bible Reference</h1>
+                         <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#joshua" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#ruth" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#judges">Judges</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                  <!----The book of  Ruth-->
+                 <div data-role="page" id="ruth">
+                    <div data-role="header">
+                     <h1>Bible Reference</h1>
+                         <a href="#studio-body-container" data-icon="home" data-iconpos="notext"></a>
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#judges" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#1samuel" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ruth">Ruth</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+    
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                   <!----The book of  1 Samuel-->
+                 <div data-role="page" id="1samuel">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#ruth" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#2samuel" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#1samuel">1 Samuel</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+       
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                 <!----The book of  2 Samuel-->
+                 <div data-role="page" id="2samuel">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#1samuel" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#1kings" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#2samuel">2 Samuel</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                 <!----The book of  1 kings-->
+                 <div data-role="page" id="1kings">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#2samuel" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#2kings" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#1kings">1 Kings</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+       
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                    <!----The book of  2 kings-->
+                 <div data-role="page" id="2kings">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#1kings" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#1chronicles" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#2kings">2 Kings</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                            
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                   <!----The book of   1 Chronicles-->
+                 <div data-role="page" id="1chronicles">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#2kings" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#2chronicles" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#1chronicles">1 Chronicles</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                         
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                    <!----The book of 2 Chronicles-->
+                 <div data-role="page" id="2chronicles">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#1chronicles" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#ezra" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#2chronicles">2 Chronicles</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+        
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                                <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                                <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                                <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                                <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                             
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                 <!----The book of Ezra-->
+                 <div data-role="page" id="ezra">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#2chronicles" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#nehemiah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ezra">Ezra</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                <!----The book of Nehemiah-->
+                 <div data-role="page" id="nehemiah">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#ezra" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#esther" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#nehemiah">Nehemiah</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                               
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                  
+                <!----The book of Esther-->
+                 <div data-role="page" id="esther">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#nehemiah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#job" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#esther">Esther</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                 <!----The book of Job-->
+                 <div data-role="page" id="job">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#esther" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#psalms" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#job">Job</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+        
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                                <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                                <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                                <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                                <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                                <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                                <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                                <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                                <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                                <li><a   id="Chap41"href="#41">Chapter 41</a></li>
+                                <li><a   id="Chap42"href="#42">Chapter 42</a></li>
+                                
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                <!----The book of Psalms-->
+                 <div data-role="page" id="psalms">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#job" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#proverbs" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#psalms">Psalms</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap11"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+        
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                                <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                                <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                                <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                                <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                                <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                                <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                                <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                                <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                                <li><a   id="Chap41"href="#41">Chapter 41</a></li>
+                                <li><a   id="Chap42"href="#42">Chapter 42</a></li>
+                                <li><a   id="Chap43"href="#43">Chapter 43</a></li>
+                                <li><a   id="Chap44"href="#44">Chapter 44</a></li>
+                                <li><a   id="Chap45"href="#45">Chapter 45</a></li>
+                                <li><a   id="Chap46"href="#46">Chapter 46</a></li>
+                                <li><a   id="Chap47"href="#47">Chapter 47</a></li>
+                                <li><a   id="Chap48"href="#48">Chapter 48</a></li>
+                                <li><a   id="Chap49"href="#49">Chapter 49</a></li>
+                                <li><a   id="Chap50"href="#50">Chapter 50</a></li>
+    
+                                <li><a   id="Chap51" href="#51">Chapter 51</a></li>
+                                <li><a   id="Chap52" href="#52">Chapter 52</a></li>
+                                <li><a   id="Chap53" href="#53">Chapter 53</a></li>
+                                <li><a   id="Chap54" href="#54">Chapter 54</a></li>
+                                <li><a   id="Chap55" href="#55">Chapter 55</a></li>
+                                <li><a   id="Chap56" href="#56">Chapter 56</a></li>
+                                <li><a   id="Chap57" href="#57">Chapter 57</a></li>
+                                <li><a   id="Chap58" href="#58">Chapter 58</a></li>
+                                <li><a   id="Chap59" href="#59">Chapter 59</a></li>
+                                <li><a   id="Chap60"href="#60">Chapter 60</a></li>
+                                <li><a   id="Chap61"href="#61">Chapter 61</a></li>
+                                <li><a   id="Chap62"href="#62">Chapter 62</a></li>
+                                <li><a   id="Chap63"href="#63">Chapter 63</a></li>
+                                <li><a   id="Chap64"href="#64">Chapter 64</a></li>
+                                <li><a   id="Chap65"href="#65">Chapter 65</a></li>
+                                <li><a   id="Chap66"href="#66">Chapter 66</a></li>
+                                <li><a   id="Chap67"href="#67">Chapter 67</a></li>
+                                <li><a   id="Chap68"href="#68">Chapter 68</a></li>
+                                <li><a   id="Chap69"href="#69">Chapter 69</a></li>
+                                <li><a   id="Chap70"href="#70">Chapter 70</a></li>
+                                <li><a   id="Chap71"href="#71">Chapter 71</a></li>
+                                <li><a   id="Chap72"href="#72">Chapter 72</a></li>
+                                <li><a   id="Chap73"href="#73">Chapter 73</a></li>
+                                <li><a   id="Chap74"href="#74">Chapter 74</a></li>
+                                <li><a   id="Chap75"href="#75">Chapter 75</a></li>
+                                <li><a   id="Chap76"href="#76">Chapter 76</a></li>
+                                <li><a   id="Chap77"href="#77">Chapter 77</a></li>
+                                <li><a   id="Chap78"href="#78">Chapter 78</a></li>
+                                <li><a   id="Chap79"href="#79">Chapter 79</a></li>
+                                <li><a   id="Chap80"href="#80">Chapter 80</a></li>
+        
+                                <li><a   id="Chap81" href="#81">Chapter 81</a></li>
+                                <li><a   id="Chap82" href="#82">Chapter 82</a></li>
+                                <li><a   id="Chap83" href="#83">Chapter 83</a></li>
+                                <li><a   id="Chap84" href="#84">Chapter 84</a></li>
+                                <li><a   id="Chap85" href="#85">Chapter 85</a></li>
+                                <li><a   id="Chap86" href="#86">Chapter 86</a></li>
+                                <li><a   id="Chap87" href="#87">Chapter 87</a></li>
+                                <li><a   id="Chap88" href="#88">Chapter 88</a></li>
+                                <li><a   id="Chap89" href="#89">Chapter 89</a></li>
+                                <li><a   id="Chap90"href="#90">Chapter 90</a></li>
+                                <li><a   id="Chap91"href="#91">Chapter 91</a></li>
+                                <li><a   id="Chap92"href="#92">Chapter 92</a></li>
+                                <li><a   id="Chap93"href="#93">Chapter 93</a></li>
+                                <li><a   id="Chap94"href="#94">Chapter 94</a></li>
+                                <li><a   id="Chap95"href="#95">Chapter 95</a></li>
+                                <li><a   id="Chap96"href="#96">Chapter 96</a></li>
+                                <li><a   id="Chap97"href="#97">Chapter 97</a></li>
+                                <li><a   id="Chap98"href="#98">Chapter 98</a></li>
+                                <li><a   id="Chap99"href="#99">Chapter 99</a></li>
+                                <li><a   id="Chap100"href="#100">Chapter 100</a></li>
+    
+                                <li><a   id="Chap101" href="#101">Chapter 101</a></li>
+                                <li><a   id="Chap102" href="#102">Chapter 102</a></li>
+                                <li><a   id="Chap103" href="#103">Chapter 103</a></li>
+                                <li><a   id="Chap104" href="#104">Chapter 104</a></li>
+                                <li><a   id="Chap105" href="#105">Chapter 105</a></li>
+                                <li><a   id="Chap106" href="#106">Chapter 106</a></li>
+                                <li><a   id="Chap107" href="#107">Chapter 107</a></li>
+                                <li><a   id="Chap108" href="#108">Chapter 108</a></li>
+                                <li><a   id="Chap109" href="#109">Chapter 109</a></li>
+                                <li><a   id="Chap110"href="#110">Chapter 110</a></li>
+                                <li><a   id="Chap111"href="#111">Chapter 111</a></li>
+                                <li><a   id="Chap112"href="#112">Chapter 112</a></li>
+                                <li><a   id="Chap113"href="#113">Chapter 113</a></li>
+                                <li><a   id="Chap114"href="#114">Chapter 114</a></li>
+                                <li><a   id="Chap115"href="#115">Chapter 115</a></li>
+                                <li><a   id="Chap116"href="#116">Chapter 116</a></li>
+                                <li><a   id="Chap117"href="#117">Chapter 117</a></li>
+                                <li><a   id="Chap118"href="#118">Chapter 118</a></li>
+                                <li><a   id="Chap119"href="#119">Chapter 119</a></li>
+                                <li><a   id="Chap120"href="#120">Chapter 120</a></li>
+                                <li><a   id="Chap121"href="#121">Chapter 121</a></li>
+                                <li><a   id="Chap122"href="#122">Chapter 122</a></li>
+                                <li><a   id="Chap123"href="#123">Chapter 123</a></li>
+                                <li><a   id="Chap124"href="#124">Chapter 124</a></li>
+                                <li><a   id="Chap125"href="#25">Chapter 125</a></li>
+                                <li><a   id="Chap126"href="#126">Chapter 126</a></li>
+                                <li><a   id="Chap127"href="#127">Chapter 127</a></li>
+                                <li><a   id="Chap128"href="#128">Chapter 128</a></li>
+                                <li><a   id="Chap129"href="#129">Chapter 129</a></li>
+                                <li><a   id="Chap130"href="#130">Chapter 130</a></li>
+        
+                                <li><a   id="Chap131" href="#131">Chapter 131</a></li>
+                                <li><a   id="Chap132" href="#132">Chapter 132</a></li>
+                                <li><a   id="Chap133" href="#133">Chapter 133</a></li>
+                                <li><a   id="Chap134" href="#134">Chapter 134</a></li>
+                                <li><a   id="Chap135" href="#135">Chapter 135</a></li>
+                                <li><a   id="Chap136" href="#136">Chapter 136</a></li>
+                                <li><a   id="Chap137" href="#137">Chapter 137</a></li>
+                                <li><a   id="Chap138" href="#138">Chapter 138</a></li>
+                                <li><a   id="Chap139" href="#139">Chapter 139</a></li>
+                                <li><a   id="Chap140"href="#140">Chapter 140</a></li>
+                                <li><a   id="Chap141"href="#141">Chapter 141</a></li>
+                                <li><a   id="Chap142"href="#142">Chapter 142</a></li>
+                                <li><a   id="Chap143"href="#143">Chapter 143</a></li>
+                                <li><a   id="Chap144"href="#144">Chapter 144</a></li>
+                                <li><a   id="Chap145"href="#145">Chapter 145</a></li>
+                                <li><a   id="Chap146"href="#146">Chapter 146</a></li>
+                                <li><a   id="Chap147"href="#147">Chapter 147</a></li>
+                                <li><a   id="Chap148"href="#148">Chapter 148</a></li>
+                                <li><a   id="Chap149"href="#149">Chapter 149</a></li>
+                                <li><a   id="Chap150"href="#150">Chapter 150</a></li>
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+                <!----The book of Proverbs-->
+                 <div data-role="page" id="proverbs">
+                        <nav data-role="navbar" data-theme="a">
+                                <ul>
+                                    <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                    <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                                </ul>
+                            </nav>
+                    <div data-role="header">
+                        <a href="#psalms" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                        <h2>Old Testament</h2>
+                        <a href="#ecclesiastes" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                             
+                    </div>
+                        <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#proverbs">Proverbs</a></li>
+                            </ul>
+                        </nav>
+                        <div data-role= "main" class="ui-content">
+                          <ul data-role="listview">
+                                <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                                <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                                <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                                <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                                <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                                <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                                <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                                <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                                <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                                <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                                <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                                <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                                <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                                <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+        
+                                <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                                
+                          </ul>
+                        </div>
+                  </div> <!----end page-->
+    
+               <!----The book of Ecclesiates-->
+               <div data-role="page" id="ecclesiastes">
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#proverbs" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#songofsongs" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#ecclesiastes">Ecclesiastes</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                            <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                            <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                            <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                            <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                            <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                            <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                            <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                           
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+    
+               <!----The book of Song of songs-->
+               <div data-role="page" id="songofsongs">
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#ecclesiastes" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#isaiah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#songofsongs">Song of songs</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                            <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                            <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                            <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                            
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+             <!----The book of Isaiah-->
+             <div data-role="page" id="isaiah">
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#songofsongs" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#jeremiah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#isaiah">Isaiah</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                            <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                            <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                            <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                            <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                            <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                            <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                            <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                            <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                            <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                            <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                            <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                            <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                            <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                            <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                            <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                            <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                            <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                            <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                            <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                            <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                            <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                            <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                            <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                            <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                            <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+    
+                            <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                            <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                            <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                            <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                            <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                            <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                            <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                            <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                            <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                            <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                            <li><a   id="Chap41"href="#41">Chapter 41</a></li>
+                            <li><a   id="Chap42"href="#42">Chapter 42</a></li>
+                            <li><a   id="Chap43"href="#43">Chapter 43</a></li>
+                            <li><a   id="Chap44"href="#44">Chapter 44</a></li>
+                            <li><a   id="Chap45"href="#45">Chapter 45</a></li>
+                            <li><a   id="Chap46"href="#46">Chapter 46</a></li>
+                            <li><a   id="Chap47"href="#47">Chapter 47</a></li>
+                            <li><a   id="Chap48"href="#48">Chapter 48</a></li>
+                            <li><a   id="Chap49"href="#49">Chapter 49</a></li>
+                            <li><a   id="Chap50"href="#50">Chapter 50</a></li>
+                            <li><a   id="Chap51" href="#51">Chapter 51</a></li>
+                            <li><a   id="Chap52" href="#52">Chapter 52</a></li>
+                            <li><a   id="Chap53" href="#53">Chapter 53</a></li>
+                            <li><a   id="Chap54" href="#54">Chapter 54</a></li>
+                            <li><a   id="Chap55" href="#55">Chapter 55</a></li>
+                            <li><a   id="Chap56" href="#56">Chapter 56</a></li>
+                            <li><a   id="Chap57" href="#57">Chapter 57</a></li>
+                            <li><a   id="Chap58" href="#58">Chapter 58</a></li>
+                            <li><a   id="Chap59" href="#59">Chapter 59</a></li>
+                            <li><a   id="Chap60"href="#60">Chapter 60</a></li>
+                            <li><a   id="Chap61"href="#61">Chapter 61</a></li>
+                            <li><a   id="Chap62"href="#62">Chapter 62</a></li>
+                            <li><a   id="Chap63"href="#63">Chapter 63</a></li>
+                            <li><a   id="Chap64"href="#64">Chapter 64</a></li>
+                            <li><a   id="Chap65"href="#65">Chapter 65</a></li>
+                            <li><a   id="Chap66"href="#66">Chapter 66</a></li>
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+            <!----The book of Jeremiah-->
+            <div data-role="page" id="jeremiah">
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#isaiah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#lamentations" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#jeremiah">Jeremiah</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                            <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                            <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                            <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                            <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                            <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                            <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                            <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                            <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                            <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                            <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                            <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                            <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                            <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                            <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                            <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                            <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                            <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                            <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                            <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                            <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                            <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                            <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                            <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                            <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                            <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+    
+                            <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                            <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                            <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                            <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                            <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                            <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                            <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                            <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                            <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                            <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                            <li><a   id="Chap41"href="#41">Chapter 41</a></li>
+                            <li><a   id="Chap42"href="#42">Chapter 42</a></li>
+                            <li><a   id="Chap43"href="#43">Chapter 43</a></li>
+                            <li><a   id="Chap44"href="#44">Chapter 44</a></li>
+                            <li><a   id="Chap45"href="#45">Chapter 45</a></li>
+                            <li><a   id="Chap46"href="#46">Chapter 46</a></li>
+                            <li><a   id="Chap47"href="#47">Chapter 47</a></li>
+                            <li><a   id="Chap48"href="#48">Chapter 48</a></li>
+                            <li><a   id="Chap49"href="#49">Chapter 49</a></li>
+                            <li><a   id="Chap50"href="#50">Chapter 50</a></li>
+                            <li><a   id="Chap51" href="#51">Chapter 51</a></li>
+                            <li><a   id="Chap52" href="#52">Chapter 52</a></li>
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+            <!----The book of Lamentations-->
+            <div data-role="page" id="lamentations">
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#jeremiah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#ezekiel" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#lamentation">Lamentation</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                        
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+    
+            <!----The book of Ezekiel-->
+            <div data-role="page" id="ezekiel">
+                    <nav data-role="navbar" data-theme="a">
+                            <ul>
+                                <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                                <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                            </ul>
+                        </nav>
+                <div data-role="header">
+                    <a href="#lamentations" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                    <h2>Old Testament</h2>
+                    <a href="#daniel" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                         
+                </div>
+                    <nav data-role="navbar" data-theme="a">
+                        <ul>
+                            <li><a href="#ezekiel">Ezekiel</a></li>
+                        </ul>
+                    </nav>
+                    <div data-role= "main" class="ui-content">
+                      <ul data-role="listview">
+                            <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                            <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                            <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                            <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                            <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                            <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                            <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                            <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                            <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                            <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                            <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                            <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                            <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                            <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                            <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                            <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                            <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                            <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                            <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                            <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                            <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+                            <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                            <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                            <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                            <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                            <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                            <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                            <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+                            <li><a   id="Chap29"href="#29">Chapter 29</a></li>
+                            <li><a   id="Chap30"href="#30">Chapter 30</a></li>
+    
+                            <li><a   id="Chap31" href="#31">Chapter 31</a></li>
+                            <li><a   id="Chap32" href="#32">Chapter 32</a></li>
+                            <li><a   id="Chap33" href="#33">Chapter 33</a></li>
+                            <li><a   id="Chap34" href="#34">Chapter 34</a></li>
+                            <li><a   id="Chap35" href="#35">Chapter 35</a></li>
+                            <li><a   id="Chap36" href="#36">Chapter 36</a></li>
+                            <li><a   id="Chap37" href="#37">Chapter 37</a></li>
+                            <li><a   id="Chap38" href="#38">Chapter 38</a></li>
+                            <li><a   id="Chap39" href="#39">Chapter 39</a></li>
+                            <li><a   id="Chap40"href="#40">Chapter 40</a></li>
+                            <li><a   id="Chap41"href="#41">Chapter 41</a></li>
+                            <li><a   id="Chap42"href="#42">Chapter 42</a></li>
+                            <li><a   id="Chap43"href="#43">Chapter 43</a></li>
+                            <li><a   id="Chap44"href="#44">Chapter 44</a></li>
+                            <li><a   id="Chap45"href="#45">Chapter 45</a></li>
+                            <li><a   id="Chap46"href="#46">Chapter 46</a></li>
+                            <li><a   id="Chap47"href="#47">Chapter 47</a></li>
+                            <li><a   id="Chap48"href="#48">Chapter 48</a></li>
+                         
+                      </ul>
+                    </div>
+              </div> <!----end page-->
+    
+      <!----The book of Daniel-->
+      <div data-role="page" id="daniel">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#ezekiel" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#hosea" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#daniel">Daniel</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----The book of Hosea-->
+    <div data-role="page" id="hosea">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#daniel" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#joel" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#hosea">Hosea</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----The book of Joel-->
+    <div data-role="page" id="joel">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#hosea" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#amos" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#joel">Joel</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                   
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+       <!----The book of Amos-->
+    <div data-role="page" id="amos">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#joel" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#obadiah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#amos">Amos</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                   
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    
+        <!----The book of Obadiah-->
+    <div data-role="page" id="obadiah">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#amos" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#jonah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#obadiah">Obadiah</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----The book of Jonah-->
+       <div data-role="page" id="jonah">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#obadiah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#micah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#jonah">Jonah</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                   
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----The book of Micah-->
+      <div data-role="page" id="micah">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#jonah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#nahum" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#micah">Micah</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                   
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----The book of Nahum-->
+      <div data-role="page" id="nahum">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#micah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#habakkuk" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#nahum">Nahum</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----The book of Habakkuk-->
+    <div data-role="page" id="habakkuk">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#nahum" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#zephaniah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#habakkuk">Habakkuk</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    
+      <!----The book of Zephaniah-->
+    <div data-role="page" id="zephaniah">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#habakkuk" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#haggai" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#zephaniah">Zephaniah</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----The book of Haggai-->
+    <div data-role="page" id="haggai">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#zephaniah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#zechariah" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#haggai">Haggai</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                  
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----The book of Zechariah-->
+    <div data-role="page" id="zechariah">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#haggai" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#malachi" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#zechariah">Zechariah</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+        <!----The book of Malachi-->
+    <div data-role="page" id="malachi">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#zechariah" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>Old Testament</h2>
+            <a href="#matthew" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#malachi">Malachi</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    
+      <!----=======THE NEW TESTAMENT==========-->
+    
+      <!----=======Matthew==========-->
+      <div data-role="page" id="matthew">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#malachi" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#mark" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#matthew">Matthew</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                    <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                    <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                    <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                    <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                    <li><a   id="Chap11"href="#21">Chapter 21</a></li>
+                    <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                    <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                    <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                    <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                    <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                    <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                    <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    
+       <!----=======Mark==========-->
+       <div data-role="page" id="mark">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#matthew" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#luke" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#mark">Mark</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+       <!----=======Luke==========-->
+       <div data-role="page" id="luke">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#mark" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#john" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#luke">Luke</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                    <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                    <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                    <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                    <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                    <li><a   id="Chap11"href="#21">Chapter 21</a></li>
+                    <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                    <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                    <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----=======John==========-->
+      <div data-role="page" id="john">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#luke" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#acts" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#john">John</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                    <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                    <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                    <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                    <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                    <li><a   id="Chap21"href="#21">Chapter 21</a></li>
+    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+       <!----=======Acts==========-->
+       <div data-role="page" id="acts">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#john" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#romans" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#acts">Acts</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                    <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                    <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                    <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                    <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                    <li><a   id="Chap11"href="#21">Chapter 21</a></li>
+                    <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                    <li><a   id="Chap23"href="#23">Chapter 23</a></li>
+                    <li><a   id="Chap24"href="#24">Chapter 24</a></li>
+                    <li><a   id="Chap25"href="#25">Chapter 25</a></li>
+                    <li><a   id="Chap26"href="#26">Chapter 26</a></li>
+                    <li><a   id="Chap27"href="#27">Chapter 27</a></li>
+                    <li><a   id="Chap28"href="#28">Chapter 28</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+       <!----=======Romans==========-->
+       <div data-role="page" id="romans">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#acts" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#1corinthians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#romans">Romans</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+        
+    
+    <!----=======1 Corintians==========-->
+    <div data-role="page" id="1corinthians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#romans" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#2corinthians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#1corinthians">1 Corinthians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======2 Corintians==========-->
+    <div data-role="page" id="2corinthians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#1corinthians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#galatians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#2corinthians">2 Corinthians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======Galatians==========-->
+    <div data-role="page" id="galatians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#2corinthians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#ephesians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#galatians">Galatians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======Ephesians==========-->
+    <div data-role="page" id="ephesians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#galatians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#philippians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#ephesians">Ephesians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======Philippians==========-->
+    <div data-role="page" id="philippians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#ephesians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#colossians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#philippians">Philippians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======Colossians==========-->
+    <div data-role="page" id="colossians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#philippians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#1thessalonians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#colossians">Colossians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======1 Thessalonians==========-->
+    <div data-role="page" id="1thessalonians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#colossians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#2thessalonians" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#1thessalonians">1 Thessalonians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#4">Chapter 5</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======2 Thessalonians==========-->
+    <div data-role="page" id="2thessalonians">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#1thessalonians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#1timothy" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#2thessalonians">2 Thessalonians</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    
+    <!----=======1 Timothy==========-->
+    <div data-role="page" id="1timothy">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#2thessalonians" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#2timothy" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#1timothy">1 Timothy</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    
+    <!----=======2 Timothy==========-->
+    <div data-role="page" id="2timothy">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#1timothy" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#titus" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#2timothy">2 Timothy</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======Titus==========-->
+    <div data-role="page" id="titus">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#2timothy" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#philemon" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#titus">Titus</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----=======Philemon==========-->
+    <div data-role="page" id="philemon">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#titus" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#hebrews" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#philemon">Philemon</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+     <!----=======Hebrews==========-->
+     <div data-role="page" id="hebrews">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#philemon" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#james" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#hebrews">Hebrews</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+    
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======James==========-->
+    <div data-role="page" id="james">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#hebrews" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#1peter" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+                 
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#james">James</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======1 Peter==========-->
+    <div data-role="page" id="1peter">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#james" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#2peter" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#1peter">1 Peter</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======2 Peter==========-->
+    <div data-role="page" id="2peter">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#1peter" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#1john" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#2peter">2 Peter</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======1 John==========-->
+    <div data-role="page" id="1john">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#2peter" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#2john" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#1john">1 John</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----=======2 John==========-->
+    <div data-role="page" id="2john">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#1john" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#3john" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#2john">2 John</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+    <!----=======3 John==========-->
+    <div data-role="page" id="3john">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#2john" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#jude" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#3john">3 John</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+      <!----=======Jude==========-->
+    <div data-role="page" id="jude">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#3john" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <a href="#revelation" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#jude">Jude</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+              </ul>
+            </div>
+      </div> <!----end page-->
+    
+     <!----=======Revelation==========-->
+     <div data-role="page" id="revelation">
+            <nav data-role="navbar" data-theme="a">
+                    <ul>
+                        <li><a href="#ot-books" data-icon="star">Old Testament</a></li>
+                        <li><a href="#nt-books" data-icon="star">New Testament</a></li>
+                    </ul>
+                </nav>
+        <div data-role="header">
+            <a href="#jude" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>
+            <h2>New Testament</h2>
+            <!--- <a href="#rev" class="ui-btn ui-icon-forward ui-btn-icon-notext ui-corner-all"data-transition="slide"></a>-->
+        </div>
+            <nav data-role="navbar" data-theme="a">
+                <ul>
+                    <li><a href="#revelation">Revelation</a></li>
+                </ul>
+            </nav>
+            <div data-role= "main" class="ui-content">
+              <ul data-role="listview">
+                    <li><a   id="Chap1" href="#1">Chapter 1</a></li>
+                    <li><a   id="Chap2" href="#2">Chapter 2</a></li>
+                    <li><a   id="Chap3" href="#3">Chapter 3</a></li>
+                    <li><a   id="Chap4" href="#4">Chapter 4</a></li>
+                    <li><a   id="Chap5" href="#5">Chapter 5</a></li>
+                    <li><a   id="Chap6" href="#6">Chapter 6</a></li>
+                    <li><a   id="Chap7" href="#7">Chapter 7</a></li>
+                    <li><a   id="Chap8" href="#8">Chapter 8</a></li>
+                    <li><a   id="Chap9" href="#9">Chapter 9</a></li>
+                    <li><a   id="Chap10"href="#10">Chapter 10</a></li>
+                    <li><a   id="Chap11"href="#11">Chapter 11</a></li>
+                    <li><a   id="Chap12"href="#12">Chapter 12</a></li>
+                    <li><a   id="Chap13"href="#13">Chapter 13</a></li>
+                    <li><a   id="Chap14"href="#14">Chapter 14</a></li>
+                    <li><a   id="Chap15"href="#15">Chapter 15</a></li>
+                    <li><a   id="Chap16"href="#16">Chapter 16</a></li>
+                    <li><a   id="Chap17"href="#17">Chapter 17</a></li>
+                    <li><a   id="Chap18"href="#18">Chapter 18</a></li>
+                    <li><a   id="Chap19"href="#19">Chapter 19</a></li>
+                    <li><a   id="Chap20"href="#20">Chapter 20</a></li>
+                    <li><a   id="Chap11"href="#21">Chapter 21</a></li>
+                    <li><a   id="Chap22"href="#22">Chapter 22</a></li>
+                   
+              </ul>
+            </div>
+      </div> <!----end page-->
+
+ </body>
+</html>
