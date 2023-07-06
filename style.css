@@ -178,7 +178,7 @@ overflow-x: hidden;
 
 }
  .bible-studio-post-result p{
-  text-size: 14px;
+  font-size: 14px;
   font:"Hind";
   font-size: 20px;
   text-align: left;
@@ -594,7 +594,7 @@ img {
 }
 
  #words {
-  border-color: white:
+  border-color: white;
 	position: relative;
 	top:10%;
 	width:300px;
